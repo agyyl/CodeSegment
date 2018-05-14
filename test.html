@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style>
+        p{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p>asdofaindgoagnoi</p>
+    <p>asdofaindgoagnoi</p>
+    <p>asdofaindgoagnoi</p>
+    <p>asdofaindgoagnoi</p>
+    <p>asdofaindgoagnoi</p>
+    <p>asdofaindgoagnoi</p>
+    <p>asdofaindgoagnoi</p>
+    <p>asdofaindgoagnoi</p>
+    <p>asdofaindgoagnoi</p>
+    <input id="btn1" type="button" value="按钮" />
+    <script>
+        function windowAddMouseWheel() {  
+          let scrollFunc = function (e) {  
+            e = e || window.event;  
+            if (e.wheelDelta) { //判断浏览器IE，谷歌滑轮事件  
+              delta = e.wheelDelta/120; 
+              if (window.opera) delta = -delta;
+            } else if (event.detail) {
+                delta = -event.detail/3;
+            }
+            if (delta && delta < 0) {
+              console.log('向下滚了' + delta);
+            }
+          };  
+            //给页面绑定滑轮滚动事件  
+            if (document.addEventListener) {  
+                document.addEventListener('DOMMouseScroll', scrollFunc, false);  
+            }  
+        //滚动滑轮触发scrollFunc方法  
+            window.onmousewheel = document.onmousewheel = scrollFunc;  
+        }
+        windowAddMouseWheel()
+    </script>
+</body>
+
+</html>

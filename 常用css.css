@@ -1,0 +1,36 @@
+/*css 初始化*/
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form {
+  margin: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/*自定义字体*/
+@font-face {   
+	font-family:'iconfont';		/*自定义字体名称*/
+    src: url('iconfont.eot'); 		/*字体路径*/
+}
