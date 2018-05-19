@@ -207,6 +207,17 @@ export default {
       return hei;
     },
 
+    getLeft: function (ele) {
+      let left = parseInt(ele.offsetLeft);
+      if (ele.offsetParent) {
+        let supLeft = getLeft(ele.offsetParent);
+        if (!isNaN(supLeft)) {
+          left += supLeft;
+        }
+      }
+      return left;
+    },
+
     // ************************************
     // 动画特效
 
