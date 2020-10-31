@@ -1,0 +1,14 @@
+{
+  "name": "my-code-segment",
+  "version": "0.0.1",
+  "description": "常用代码段",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "codesegment"
+  ],
+  "author": "agyyl",
+  "license": "ISC"
+}
